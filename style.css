@@ -378,13 +378,122 @@ header {
 
 
 .operation {
+    padding: 0 12%;
     background-color: #fff;
-    width: 1440px;
-    height: 5505px;
+}
+
+.operation-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #141414;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.operation-container .operations p span {
+    color: var #141414;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    border-bottom: red 4px solid;
+}
+
+.conect-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+    gap: 350px;
+}
+
+.connect .connects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.connect .connects h2 {
+    color: #F67366;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.content {
+    width: 100%; 
+    max-width: 400px; 
+    /* text-align: center;  */
+    box-sizing: border-box; 
+    display: flex;
+    flex: 1;
 }
 
 
 
+
+
+.content p {
+    color: #4F4F4F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px ;
+    width: 400px;
+
+}
+
+
+
+.image-contain img {
+    width:100%;
+    height: auto;
+}
+
+.vector{
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; 
+    height: auto; 
+    margin-top: -4rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .conect-container {
+        gap: 10px; 
+    }
+
+    .connect .connects h2 {
+        font-size: 24px; 
+    }
+
+    .content p {
+        padding: 10px; 
+    }
+
+    .operation-container p{
+        padding: 50px;
+    }
+
+    .vector{
+        display: none;
+    }
+}
 
 
 
