@@ -254,12 +254,12 @@ header {
         align-items: center;
     }
 
-    .container button{
+    .container button {
         width: 100%;
     }
-    
+
     .div1 {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         width: 100%;
     }
 }
@@ -338,6 +338,18 @@ header {
     line-height: 150%;
 }
 
+.div2 {
+    padding: 50px;
+}
+
+/* .join{
+    padding: 20px 45px;
+    border-radius: 10px;
+    border: none;
+    color: red;
+    background-color: #2C2D5B;  
+} */
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .service-container {
@@ -354,13 +366,21 @@ header {
 
     .service-container p span {
         font-size: 24px;
-        line-height: 1.2; 
+        line-height: 1.2;
     }
 
     .service-container p {
         font-size: 24px;
         /* line-height: 1.8;  */
     }
+}
+
+
+
+.operation {
+    background-color: #fff;
+    width: 1440px;
+    height: 5505px;
 }
 
 
