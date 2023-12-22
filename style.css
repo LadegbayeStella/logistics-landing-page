@@ -47,7 +47,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 33px;
+    cursor: pointer;
     margin-left: 4rem;
 }
 
@@ -278,7 +279,7 @@ header {
     align-items: center;
     text-align: center;
     gap: 669px;
-    padding: 100px 150px;
+    padding: 80px;
 }
 
 .service-container p {
