@@ -1,3 +1,4 @@
+/* genera styling */
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ a {
     color: #141414;
 }
 
+/* nav bar styling start here */
 
 header {
     display: flex;
@@ -50,10 +52,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 33px;
-    /* flex-direction: column; */
     margin-left: 0;
     cursor: pointer;
-    margin-left: 4rem;
 }
 
 .button-div button {
@@ -101,6 +101,17 @@ header {
         flex-direction: row;
         margin-left: 4rem;
     }
+
+        /* .nav-bar {
+        background-color: #2C2D5B;
+        width: 100%;
+        height: auto;
+        color: #fff;
+    } */
+
+    /* .nav-bar ul li a {
+        color: #F67366;
+    } */
 }
 
 /* Media query for desktops */
@@ -114,7 +125,7 @@ header {
     }
 
 }
-
+ /* nav bar styling ends here */
 
 .absolute-container {
     position: relative;
@@ -143,14 +154,13 @@ header {
     margin-left: 4.5rem;
 }
 
+/* hero section start here */
 .container-hero {
     display: flex;
     justify-content: center;
     align-self: center;
     padding: 5% 12%;
 }
-
-
 
 .first-main {
     display: flex;
@@ -308,10 +318,10 @@ header {
 
     .first-main {
         text-align: center;
-     
+
     }
 
-    .text{
+    .text {
         margin-left: 2.5rem;
     }
 
@@ -335,7 +345,7 @@ header {
         line-height: 140%;
         text-align: center;
         text-transform: capitalize;
-    }}
+    }
 
     .tex2 p {
         font-size: 1.2rem;
@@ -361,17 +371,6 @@ header {
         width: 100%;
     }
 
-    .nav-bar {
-        background-color: #2C2D5B;
-        width: 100%;
-        height: auto;
-        color: #fff;
-    }
-
-    .nav-bar ul li a {
-        color: #F67366;
-    }
-
     .container button {
         padding: 36px;
         border-radius: 12px;
@@ -382,21 +381,12 @@ header {
         justify-content: center;
         display: flex;
         align-items: center;
-        background-color: #F67366;
+        background-color: #2c2d5b;
         cursor: pointer;
     }
 }
 
-/* @media screen and (min-width: 992px) {
-    .icon {
-        flex-direction: row;
-        justify-content: center;
-    }
 
-    .icon button {
-        padding: 15px 20px;
-    }
-} */
 .container button p {
     font-size: 1.3rem;
 }
@@ -475,13 +465,6 @@ header {
     padding: 50px;
 }
 
-/* .join{
-    padding: 20px 45px;
-    border-radius: 10px;
-    border: none;
-    color: red;
-    background-color: #2C2D5B;  
-} */
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -504,7 +487,6 @@ header {
 
     .service-container p {
         font-size: 24px;
-        /* line-height: 1.8;  */
     }
 }
 
@@ -567,7 +549,7 @@ header {
 
 .content {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     text-align: center;
     box-sizing: border-box;
     display: flex;
@@ -589,6 +571,7 @@ header {
 .image-contain img {
     width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 .vector {
@@ -629,6 +612,9 @@ header {
 
 .last-section {
     background: #EEF1FA;
+    height: auto;
+    width: 100%;
+    padding: 0% 12%;
 }
 
 .last-section-container {
@@ -640,11 +626,11 @@ header {
     /* gap: 100px; */
 }
 
+
 .last-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 100px;
 }
 
 
@@ -677,20 +663,94 @@ header {
 .last-img img {
     max-width: 100%;
     height: auto;
+    margin-top: 4rem;
 }
 
-@media (min-width: 768px) {
-
-    /* header {
-        display: none;
-    } */
+footer {
+    background-color: #2c2d5b;
+    color: #FFF;
+    padding: 70px 150px;
 }
 
-@media (max-width: 768px) {
+.foot-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
 
-    /* .nav-bar, */
-    /* .button-div {
-        display: none; */
+
+.signup {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 220px;
+}
+
+.socia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socia li {
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.line img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+@media (max-width: 320px) {
+
+    .foot-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .signup {
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 100%;
+        /* Set max-width to ensure responsiveness */
+        margin: 0 auto;
+        /* Center the signup div */
+        padding: 0 20px;
+        /* Add some padding for better readability on smaller screens */
+        box-sizing: border-box;
+        /* Include padding and border in the element's total width and height */
+    }
+
+
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+    .signup {
+        width: 100%;
+    }
 }
 
 label {
