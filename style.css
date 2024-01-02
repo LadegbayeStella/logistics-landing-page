@@ -191,11 +191,14 @@ header {
 }
 
 .icon button {
-    padding: 1em 4rem;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
     background-color: #2C2D5B;
+    display: flex;
+    width: 168px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
 }
 
 .icon .video-img img {
@@ -289,15 +292,61 @@ header {
 .container button p {
     font-size: 1.3rem;
 }
-
-@media(max-width:320px){
+@media screen and (max-width: 380px) {
     .icon-hamburger img {
         margin-left: 14rem;
-        margin-top:-6rem;
+        margin-top: -6rem;
     }
 
-    .hero{
+    .first-main {
+        width: 366px;
+        margin-left: -1.5rem;
         margin-top: -6rem;
+    }
+
+    .first-main .text h2 {
+        font-size: 16px;
+    }
+
+    .first-main .text {
+        width: 366px;
+    }
+
+    .image img {
+        height: auto;
+        max-width: 100%;
+    }
+
+}
+
+
+@media(max-width:320px) {
+    .icon-hamburger img {
+        margin-left: 14rem;
+        margin-top: -6rem;
+    }
+
+    .hero {
+        margin-top: -6rem;
+    }
+
+    .first-main {
+        width: 366px;
+        margin-left: -3rem;
+    }
+
+
+    .first-main .text h2 {
+        font-size: 16px;
+    }
+
+    .first-main .text {
+        width: 366px;
+    }
+
+    .image img {
+        height: auto;
+        max-width: 100%;
     }
 }
 
@@ -352,13 +401,16 @@ header {
 
     .first-main .tex2 p {
         font-style: normal;
+        font-family: sans-serif;
+        color: #333;;
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1;
         margin-top: -30px;
+        width: 100%;
         text-align: center;
     }
 
-     .icon { 
+    .icon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -370,20 +422,21 @@ header {
         font-size: 14px;
     }
 
+    /* 
     .icon button {
-        padding: 1em 3rem;
+        padding: 10px 50px;
         border-radius: 10px;
         border: none;
         font-size: 16px;
         background-color: #2C2D5B;
-    }
+    } */
 
     .video-img img {
         max-width: 100%;
     }
 
     p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .container-hero {
