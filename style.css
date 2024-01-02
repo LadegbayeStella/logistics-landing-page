@@ -12,6 +12,7 @@ body {
     color: #141414;
     background-color: #FFFfff;
     overflow-x: hidden;
+    font-size: 91.4%;
 
 }
 
@@ -80,7 +81,48 @@ header {
     font-weight: 800;
 }
 
+
+.icon-hamburger img{
+   display: none;
+  }
+
+
+
 /* media queries for navbar */
+
+@media (max-width: 320px){
+    header nav {
+        display: none;
+      }
+
+      header .button-div{
+        display: none;
+      }
+
+      header {
+        overflow: hidden;
+        background-color :#2C2D5B;
+        color: #EEF1FA;
+        position: relative;
+      }
+
+      label img{
+        margin-left: -7rem;
+      }
+
+      .icon-hamburger img{
+        margin-left:14rem
+      }
+    
+      .hero{
+        margin-top: -8rem;
+      }
+
+      .tex2{
+            font-size: 1.2rem;
+    
+      }
+}
 
 /* Media query for tablets */
 @media screen and (min-width: 600px) {
@@ -339,7 +381,7 @@ header {
     .first-main .text h2 span {
         color: #F67366;
         font-family: Lato;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-style: normal;
         font-weight: 900;
         line-height: 140%;
@@ -348,7 +390,7 @@ header {
     }
 
     .tex2 p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 
