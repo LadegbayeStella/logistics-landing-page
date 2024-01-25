@@ -12,7 +12,7 @@ body {
     color: #141414;
     background-color: #FFFfff;
     overflow-x: hidden;
-    font-size: 91.4%;
+   
 
 }
 
@@ -192,13 +192,11 @@ header {
 
 .icon button {
     background-color: #2C2D5B;
-    display: flex;
-    width: 168px;
-    padding: 20px 40px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    color: #EEF1FA;
+    padding: 24px 25px;
     border-radius: 12px;
+    width: 100%;
+    max-width: 150px;
 }
 
 .icon .video-img img {
